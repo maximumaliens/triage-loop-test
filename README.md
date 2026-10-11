@@ -25,6 +25,16 @@ It is an independent add-on, not affiliated with or endorsed by Matt Pocock. It 
 ticket brief held in a git repository, but it was written for `/triage` output. See
 [Credits and licence](#credits-and-licence) for provenance.
 
+## Why this exists
+
+A completed triage brief becomes instructions for the implementing agent. If it includes unnecessary tests, extra review gates, repeated owner decisions or overly specific implementation instructions, those become additional work—and additional supervision for the owner.
+
+`triage-loop-test` examines the brief before implementation. One agent proposes removing unnecessary obligations; a separate checker challenges those cuts and checks that the original request, approved decisions and required behaviour survive.
+
+The aim is to reduce the total job, including work passed back to the owner. Shorter wording alone does not count as an improvement.
+
+This is an experimental workflow. This release publishes no evaluation results or measured savings.
+
 ## Contents
 
 ```
